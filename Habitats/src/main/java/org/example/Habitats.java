@@ -5,5 +5,9 @@ public class Habitats {
     private boolean limpieza;
     private float humedad;
 
-  
+    public Habitats(double temperatura, boolean limpieza, float humedad) {
+        this.temperatura = temperatura;
+        this.limpieza = limpieza;
+        this.humedad = humedad;
+    }
 }
