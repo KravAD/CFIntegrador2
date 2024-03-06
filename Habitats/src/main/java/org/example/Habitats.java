@@ -51,4 +51,8 @@ abstract class Habitats {
     public void setHumedad(float humedad) {
         this.humedad = humedad;
     }
+
+    public abstract String obtenerDescripcion();
+    public abstract String analizarHabitat();
+
 }
