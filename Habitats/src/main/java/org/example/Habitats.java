@@ -1,6 +1,8 @@
 package org.example;
 
-public class Habitats {
+abstract class Habitats {
+
+    private String nombre;
     private double temperatura;
     private boolean limpieza;
     private float humedad;
