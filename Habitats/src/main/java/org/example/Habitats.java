@@ -13,9 +13,42 @@ abstract class Habitats {
         float humedad = 0.1F;
 
     }
-    public Habitats(double temperatura, boolean limpieza, float humedad) {
+    public Habitats(String nombre, double temperatura, boolean limpieza, float humedad) {
+        this.nombre = nombre;
         this.temperatura = temperatura;
         this.limpieza = limpieza;
+        this.humedad = humedad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public double getTemperatura() {
+        return temperatura;
+    }
+
+    public void setTemperatura(double temperatura) {
+        this.temperatura = temperatura;
+    }
+
+    public boolean isLimpieza() {
+        return limpieza;
+    }
+
+    public void setLimpieza(boolean limpieza) {
+        this.limpieza = limpieza;
+    }
+
+    public float getHumedad() {
+        return humedad;
+    }
+
+    public void setHumedad(float humedad) {
         this.humedad = humedad;
     }
 }
