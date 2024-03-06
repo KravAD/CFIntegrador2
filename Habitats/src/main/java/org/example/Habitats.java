@@ -1,31 +1,24 @@
 package org.example;
 
 abstract class Habitats {
-
     private String nombre;
     private double temperatura;
+    private double humedad;
     private boolean limpieza;
-    private float humedad;
 
-    public Habitats (){
-        double temperatura = 0.0;
-        boolean limpieza = true;
-        float humedad = 0.1F;
-
-    }
-    public Habitats(String nombre, double temperatura, boolean limpieza, float humedad) {
+    public Habitats(String nombre, double temperatura, double humedad, boolean limpieza) {
         this.nombre = nombre;
         this.temperatura = temperatura;
-        this.limpieza = limpieza;
         this.humedad = humedad;
+        this.limpieza = limpieza;
     }
 
+    public abstract String obtenerDescripcion();
+    public abstract String analizarHabitat();
+
+    // Getters y setters
     public String getNombre() {
         return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
     public double getTemperatura() {
@@ -36,6 +29,14 @@ abstract class Habitats {
         this.temperatura = temperatura;
     }
 
+    public double getHumedad() {
+        return humedad;
+    }
+
+    public void setHumedad(double humedad) {
+        this.humedad = humedad;
+    }
+
     public boolean isLimpieza() {
         return limpieza;
     }
@@ -43,16 +44,4 @@ abstract class Habitats {
     public void setLimpieza(boolean limpieza) {
         this.limpieza = limpieza;
     }
-
-    public float getHumedad() {
-        return humedad;
-    }
-
-    public void setHumedad(float humedad) {
-        this.humedad = humedad;
-    }
-
-    public abstract String obtenerDescripcion();
-    public abstract String analizarHabitat();
-
 }
