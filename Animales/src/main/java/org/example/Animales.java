@@ -12,6 +12,8 @@ abstract class Animales {
     }
 
     public abstract String hacerRuido();
+    public abstract void alimentar();
+
 
 
 
