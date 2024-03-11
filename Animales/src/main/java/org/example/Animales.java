@@ -1,6 +1,6 @@
 package org.example;
 
-public class Animales {
+abstract class Animales {
     private String nombre;
     private int edad;
     private String habitat;
@@ -10,4 +10,10 @@ public class Animales {
         this.edad = edad;
         this.habitat = habitat;
     }
+
+    public abstract String hacerRuido();
+
+
+
+
 }
